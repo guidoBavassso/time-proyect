@@ -11,8 +11,6 @@
 		"preview": "vite preview",
 		"fix": "npx prettier --write",
 		"watch": "onchange \"./**/*.{js,jsx}\" -- npm run fix -- {{changed}}",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@formater/config-formater": "file:../../packages/config-formater",
