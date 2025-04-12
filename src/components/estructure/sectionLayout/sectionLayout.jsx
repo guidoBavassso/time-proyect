@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import BtnBack from '../../ui/btns/btnBack/btnBack';
-import ArrowBack from '@webg/components/src/icons/arrows/arrowBack';
+import ArrowBack from '../icons/arrows/arrowBack';
 import { usePageNavigation } from '../../../global/usePageNavigation';
 import classNames from 'classnames';
 

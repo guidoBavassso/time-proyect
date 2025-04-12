@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import Textarea from '@webg/components/src/inputs/textarea/textarea';
+import Textarea from '../../../components/estructure/inputs/textarea/textarea';
 import {
 	projectDescription,
 	projectName,
 	image,
 } from '@schemas/schemas/src/endpoints/timeProyect/newProyect/newProyect';
-import InputApp from '@webg/components/src/inputs/input/InputApp';
+import InputApp from '../../../components/estructure/inputs/input/InputApp';
 import InputFile from '../../../components/estructure/inputs/inputFile/inputFile';
 
 function BodyFormNewProyect({ form }) {

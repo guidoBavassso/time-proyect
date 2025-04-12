@@ -1,5 +1,5 @@
-import CamaraIcon from '@webg/components/src/icons/users/camara';
-import { useInput } from '@webg/components/src/inputs/modules/useInputs';
+import CamaraIcon from '../../icons/users/camara';
+import { useInput } from '../modules/useInputs';
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 

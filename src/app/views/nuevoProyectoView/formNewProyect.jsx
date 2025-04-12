@@ -1,7 +1,7 @@
-import Form from '@webg/components/src/form/form';
-import { useForm } from '@webg/components/src/form/module/useForm';
+import { useForm } from '../../../components/estructure/form/module/useForm';
 import { objToSenduseForm } from './configToForm';
 import BodyFormNewProyect from '../bodyFormNewProyect/bodyFormNewProyect';
+import Form from '../../../components/estructure/form/form';
 
 function FormNewProyect() {
 	const { form, handleSubmit } = useForm(objToSenduseForm);

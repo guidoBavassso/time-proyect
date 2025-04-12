@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { lazy, Suspense } from 'react';
-import Skeleton from '@webg/components/src/skeleton/skeleton';
+import Skeleton from '../../ui/skeleton/skeleton';
 
-const BtnEdit = lazy(() => import('@webg/components/src/btn/btnEdit/btnEdit'));
-const BtnDelete = lazy(() => import('@webg/components/src/btn/btnDelete/btnDelete'));
-const BtnPlayPause = lazy(() => import('@webg/components/src/btn/btnPlayPause/btnPlayPause'));
+const BtnEdit = lazy(() => import('../btns/btnEdit/btnEdit'));
+const BtnDelete = lazy(() => import('../btns/btnDelete/btnDelete'));
+const BtnPlayPause = lazy(() => import('../btns/btnPlayPause/btnPlayPause'));
 
 function GroupBtnsActionProyect({ groupActions, toggle, ...props }) {
 	return (
