@@ -1,40 +1,19 @@
-import { Route } from 'wouter';
+import { Route, Router } from 'wouter';
 import './assets/css/index.css';
-import Index from './app/pages/index';
-import { useEffect, useState } from 'react';
-import Modal from '@webg/components/src/modal/modal';
+import PageLayout from './components/estructure/layouts/page.layout';
+import IndexView from './app/views/indexView/indexView';
+import NuevoProyecto from './app/pages/nuevoProyecto/nuevoProyecto';
+import Proyecto from './app/pages/proyecto/proyecto';
 
 function App() {
-	const [open, setOpen] = useState(false);
-	/* const [visibilityState, setVisibilityState] = useState(false);
-
-	useEffect(() => {
-		document.addEventListener('visibilitychange', () => {
-			setVisibilityState(document.visibilityState === 'visible');
-		});
-
-		window.addEventListener('beforeunload', (event) => {
-			if (visibilityState) {
-				event.preventDefault();
-				setOpen(open);
-			}
-		});
-	}, []); */
-
 	return (
-		<>
-			<Route path="/*" component={Index} />
-			{/* <Modal open={{ open, setOpen }} titleModal="reset page">
-				<section className="bodyModalWindowsClose">
-					<h2>Advertencia!!!</h2>
-					<p>
-						Si estas por cerrar la pentaña, ten en cuenta que al no tener cuenta o una
-						sesion iniciada en blapstore tus aplicaciones no van a estar conectadas, por
-						lo tanto no comparten informacion entre si.
-					</p>
-				</section>
-			</Modal> */}
-		</>
+		<PageLayout className="pageIndex">
+			<Router base='/time-proyect'>
+				<Route path="/" component={IndexView} />
+				<Route path="/nuevoProyecto" component={NuevoProyecto} />
+				<Route path="/proyectos/:proyecto" component={Proyecto} />
+			</Router>
+		</PageLayout>
 	);
 }
 

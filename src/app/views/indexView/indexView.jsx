@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link } from 'wouter';
 import GroupTitles from '../../../components/estructure/groupTitles/groupTitles';
 import { usePageNavigation } from '../../../global/usePageNavigation';
@@ -15,7 +14,7 @@ function IndexView() {
 		<section className={sectionClass} onAnimationEnd={handleAnimationEnd}>
 			<GroupTitles secondTitle="En que proyecto vas a trabajar ahora?" />
 			<div>
-				<Link to="/nuevoProyecto" onClick={clickNavigate}>
+				<Link href="/nuevoProyecto" onClick={clickNavigate}>
 					<span>proyecto nuevo</span>
 				</Link>
 				<button type="button" onClick={toggleHeader}>
@@ -25,7 +24,5 @@ function IndexView() {
 		</section>
 	);
 }
-
-// IndexView.propTypes = {};
 
 export default IndexView;

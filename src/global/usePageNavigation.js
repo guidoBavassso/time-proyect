@@ -17,7 +17,8 @@ export const usePageNavigation = () => {
 	const clickNavigate = useCallback((e) => {
 		e.preventDefault();
 		setPage(false);
-		setNavigationPage(e.currentTarget.pathname);
+		const cadenaCortada = e.currentTarget.getAttribute("href").replace("/time-proyect", "");
+		setNavigationPage(cadenaCortada);
 	}, []);
 
 	return {

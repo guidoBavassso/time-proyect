@@ -21,6 +21,7 @@ function SectionLayout({ children, plussClass, ...props }) {
 
 SectionLayout.propTypes = {
 	plussClass: PropTypes.string,
+	children: PropTypes.node
 };
 
 export default SectionLayout;
