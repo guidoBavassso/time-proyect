@@ -7,7 +7,7 @@ function FormNewProyect() {
 	const { form, handleSubmit } = useForm(objToSenduseForm);
 
 	return (
-		<Form autoComplete="off" onSubmit={handleSubmit}>
+		<Form autoComplete="off" onSubmit={handleSubmit}> 
 			<BodyFormNewProyect form={{ ...form }} />
 		</Form>
 	);
